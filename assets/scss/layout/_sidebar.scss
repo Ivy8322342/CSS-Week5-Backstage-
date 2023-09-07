@@ -1,0 +1,56 @@
+.min-width-296{
+    min-width: 296px;
+}
+
+.sidebar{
+    li{
+        transition: all 0.3s;
+        position: relative;
+
+        &::after{
+        content:"";
+        position:absolute;
+        width:8px;
+        height: 100%;
+        background-color: $success;
+        left:-20px;
+        top:0;
+        transition: all 0.3s;
+
+        }
+        a{
+            color:$gray-900;
+            &:visited{
+                color:$gray-900;
+            }
+        }
+        &:hover{
+            a{
+                background-color: $gray-200;
+                color:$success;
+            }
+    
+                &::after{
+                    left:0;
+                }
+        }
+
+
+     
+    }
+
+   
+}
+
+.sidebar_item_active{
+    a{
+        background-color: $gray-200;
+        color:$success;}
+
+        &::after{
+            left:0;
+        }
+}
+
+
+

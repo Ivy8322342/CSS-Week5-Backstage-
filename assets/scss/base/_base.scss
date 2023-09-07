@@ -1,0 +1,14 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Lato',  'Roboto Mono', monospace,sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    max-width:100%;
+    vertical-align: middle;
+}
+
